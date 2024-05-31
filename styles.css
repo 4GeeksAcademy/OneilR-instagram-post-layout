@@ -1,47 +1,76 @@
-body{
+body {
+    font-family: Arial, sans-serif;
     background-color: black;
-}
-.container{
-    background-color: white;
-    width: 600px;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.post-header{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
+    height: 100vh;
+    margin: 0;
 }
-.name{
-    font-size: 18px;
+
+.post {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.post-header {
     display: flex;
-    position: relative;
-    flex-grow: 1;
-    padding-left: 5px;
-    padding-right: 10px;
-}
-.elip{
-    display: inline-flexbox;
-    justify-content: left;
-}
-.pic{
-    width: 600px;
-}
-icons{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding-right: 20px;
-    padding-top: px;
-    padding-left: px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
 }
-.fa-bookmark{
+
+.post-header i.fab.fa-html5 {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.post-header .username {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.post-header .user-handle {
+    justify-content: first baseline;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.post-header i.fas.fa-ellipsis-h {
+    margin-left: auto;
+    color: #aaa;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.post-actions {
+    display: flex;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.post-actions i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post-actions i.far.fa-bookmark {
     margin-left: auto;
 }
-.post-body{
-    padding-left: px;
-    padding-right: px;
+
+.post-likes {
+    padding: 0 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.post-caption {
+    padding: 0 10px 10px;
+    color: #555;
 }
